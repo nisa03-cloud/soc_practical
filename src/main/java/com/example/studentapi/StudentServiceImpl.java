@@ -1,7 +1,5 @@
 package com.example.studentapi;
 
-import com.example.studentapi.Student;
-import com.example.studentapi.StudentRepo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import java.util.List;
