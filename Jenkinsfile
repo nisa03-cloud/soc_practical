@@ -11,7 +11,6 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // 1. ⚠️ CHANGE THIS to your actual repository URL
                 git branch: 'main', url: 'https://github.com/nisa03-cloud/soc_practical.git'
             }
         }
@@ -40,7 +39,6 @@ pipeline {
         }
         stage('Run New Container') {
             steps {
-                // 2. ⚡ Changed port from 8080:8080 to 8500:8500 to match your app
                 bat 'docker run -d -p 8500:8500 --name %CONTAINER_NAME% %IMAGE_NAME%'
             }
         }
